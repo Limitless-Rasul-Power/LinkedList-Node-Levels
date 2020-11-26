@@ -13,6 +13,5 @@ struct Node
 	~Node()
 	{
 		delete level;
-		delete next;
 	}
 };
