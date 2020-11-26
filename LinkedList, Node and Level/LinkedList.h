@@ -166,7 +166,12 @@ public:
 
 	~LinkedList()
 	{
-		delete head;
+		while(head != NULL)
+		{
+			T* temp = head;
+			head = head->next;			
+			delete temp;
+		}
 	}
 
 };
